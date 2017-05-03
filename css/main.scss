@@ -1,0 +1,41 @@
+@import "navigation";
+@import "navBarLeft";
+@import "variables";
+@import "socialMenu";
+@import "widgets";
+@import "signIn";
+@import "joinNewsletter";
+@import "featuredStory";
+@import "slideShow";
+
+body {
+  background: $bodyBackground;
+}
+
+/*kontener dla wszystkich elementów znajdujących się w HTML'u*/
+#container{
+  width: 930px;
+  margin-top: $spaceBetweenBlocks;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*wartość default'owa dla wszystkich linków znajdujących sie na stronie*/
+a{
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: $greyColor;
+}
+a:visited{
+  @extend a;
+}
+
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+

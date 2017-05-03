@@ -1,0 +1,76 @@
+@import "variables";
+
+/*pełny nav bar left*/
+.navBarLeft {
+  width: 224px;
+  height: 674px;
+  background: $whiteBackground;
+  float: left;
+  margin-bottom: $spaceBetweenBlocks;
+
+  /*lista na białym tle*/
+  ul {
+    list-style-type: none;
+    margin-bottom: 0px;
+    height: 434px;
+    li {
+      border-bottom: 1px solid $greyColor;
+      display: flex;
+      align-items: center;
+      height: 62px;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding-left: 20px;
+        font-family: "Roboto", sans-serif;
+        color: $LinkFontColor;
+        font-size: $navFontSize;
+      }
+    }
+  }
+
+  span {
+    margin-left: 15px;
+    color: $greyColor;
+  }
+
+  li:hover {
+    background: $activeColor;
+    cursor: pointer;
+    span {
+      color: $whiteFont;
+    }
+    a {
+      color: $whiteFont;
+    }
+  }
+  p {
+    color: $whiteFont;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: $fontRoboto;
+    line-height: 1.5em;
+  }
+
+/*część kontaktowa - na szarym tle*/
+  .contact {
+    background: $LightGrayBackgroundColor;
+    height: 240px;
+    div:not(.clear){
+      display: flex;
+      align-items: center;
+      height: 80px;
+      p{
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      float: $floatLeft;
+      color: $whiteFont;
+    }
+  }
+
+}
+

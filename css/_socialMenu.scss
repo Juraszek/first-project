@@ -1,0 +1,85 @@
+@import "variables";
+
+.social-menu {
+  width: 337px;
+  height: 315px;
+  margin-left: 15px;
+  float: left;
+  background: $whiteBackground;
+
+  li {
+    padding: 16px;
+    a {
+      text-decoration: none;
+      color: $LinkFontColor;
+      font-family: $fontRoboto;
+      font-size: 16px;
+    }
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 20px;
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $LightGrayBackgroundColor;
+    color: $whiteFont;
+    display: inline-block;
+  }
+  span:before {
+    padding-top: 7px;
+    padding-left: 3px;
+  }
+
+
+  .li-facebook:hover {
+    span {
+      background: $fbColor;
+    }
+    a {
+      color: $fbColor;
+    }
+  }
+
+  .li-twitter:hover {
+    span {
+      background: $twitterColor;
+    }
+    a {
+      color: $twitterColor;
+    }
+  }
+
+  .li-gplus:hover {
+    span {
+      background: $gplusColor;
+    }
+    a {
+      color: $gplusColor;
+    }
+  }
+
+  .li-rss:hover {
+    span {
+      background: $rssColor;
+    }
+    a {
+      color: $rssColor;
+    }
+  }
+
+  .li-pinterest:hover {
+    span {
+      background: $pinterestColor;
+    }
+    a {
+      color: $pinterestColor;
+    }
+  }
+}
+

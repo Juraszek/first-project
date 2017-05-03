@@ -1,0 +1,39 @@
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+
+/*strzałki*/
+
+.slick-prev {
+  left: 10px;
+  z-index: 10;
+  [dir="rtl"] & {
+    left: auto;
+    right: 10px;
+  }
+  &:before {
+    content: $slick-prev-character;
+    [dir="rtl"] & {
+      content: $slick-next-character;
+    }
+  }
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 10;
+  [dir="rtl"] & {
+    left: 10px;
+    right: auto;
+  }
+  &:before {
+    content: $slick-next-character;
+    [dir="rtl"] & {
+      content: $slick-prev-character;
+    }
+  }
+}
+
+img{
+  width: 100%;
+}
+

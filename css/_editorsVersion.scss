@@ -1,0 +1,127 @@
+@import "navBarLeft";
+@import "variables";
+
+
+
+nav {
+  /*height: 60px;
+  width: 100%;
+  margin-bottom: $spaceBetweenBlocks;
+  background: $whiteBackground;*/
+  color: $LinkFontColor;
+
+  .menu-icon {
+   /* width: 60px;
+    height: 100%;
+    background: $activeColor;
+    float: $floatLeft;
+    position: relative;*/
+
+    .icon-menu{
+      /*transform: translate(-50%,-50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 0;*/
+    }
+  }
+
+  .menu-list{
+   /* width: 430px;
+    height: 100%;
+    float: left;
+    margin-bottom: $spaceBetweenBlocks;*/
+
+    ul {
+      /*display: table;
+      list-style: none;
+      height: 100%;
+      width: 100%;*/
+    }
+
+    li {
+      /*display: table-cell;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      vertical-align: middle;*/
+    }
+  }
+
+  a {
+    display: inline-block;
+    /*padding-top: 22px;*/
+    font-family: $fontRoboto;
+    color: $LinkFontColor;
+    font-size: $navFontSize;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+
+  .icon-menu {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+    /*padding-left: 10px;*/
+  }
+
+  .right-menu {
+    float: $floatRight;
+    height: 100%;
+    width: 380px;
+    div {
+      display: inline-block;
+      /*padding-bottom: 21px;*/
+    }
+    .login {
+      border-left: 1px solid $greyColor;
+      float: right;
+      width: 59px;
+      height: 100%;
+      a {
+        @extend .icon;
+        width: 100%;
+      }
+    }
+
+    .icon-search {
+      @extend .icon;
+      height: 100%;
+      width: 43px;
+    }
+    .social {
+      border-left: 1px solid $greyColor;
+      height: 100%;
+      width: 134px;
+      a {
+        @extend .icon;
+        width: 33%;
+      }
+
+      .icon-twitter {
+      }
+    }
+
+  }
+
+  a:hover {
+    color: $activeColor;
+  }
+
+  .icon-user:hover{
+    color: $activeColor;
+  }
+
+  .a-facebook:hover{
+    color: $fbColor !important;
+  }
+
+  .a-twitter:hover{
+    color: $twitterColor;
+  }
+
+  .a-gplus:hover{
+    color: $gplusColor;
+  }
+}

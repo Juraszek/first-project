@@ -1,0 +1,70 @@
+@import "variables";
+
+
+
+.sign-in{
+   width: 690px;
+   height: 165px;
+   margin-bottom: 15px;
+   background: $whiteBackground;
+   margin-left: 15px;
+   float: left;
+
+  h1{
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 28px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: $LinkFontColor;
+  }
+
+  p{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-bottom: 28px;
+    color: $LinkFontColor;
+  }
+ }
+
+.join-in-social{
+  text-align: center;
+  ul{
+    display: inline-block;
+  }
+  li{
+    display: inline-block;
+  }
+  span{
+    margin-right: 24px;
+    color: $whiteFont;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  span:before {
+    padding-top: 7px;
+  }
+
+.icon-facebook{
+  @extend span;
+  background: $fbColor;
+}
+  .icon-twitter{
+    @extend span;
+    background: $twitterColor;
+  }
+
+  .icon-gplus{
+    @extend span;
+    background: $gplusColor;
+  }
+
+  .icon-linkedin{
+    @extend span;
+    background: $linkedColor;
+  }
+
+}
